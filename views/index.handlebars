@@ -1,0 +1,31 @@
+<h1>Eat-Da_Burger!</h1>
+
+<h2>Burgers that have been eaten</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#if devoured}}
+      <li>{{burgername}}</p></li>
+    {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Enter a burger you want to eat </h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="ca">Burger Name:</label>
+    <input type="text" id="ca">
+  </div>
+
+  <div class="form-group">
+    <label for="de">Devoured?:</label>
+    <input type="checkbox" id="de">
+  </div>
+
+  <h3>Click the "Submit" Button</h3>
+
+  
+
+  <button type="submit">Submit</button>
+</form>
